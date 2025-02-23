@@ -101,13 +101,15 @@ The dataset consists of Brazilian Portuguese texts from food-related sources, an
 - **Iterations**: 60
 - **Evaluation Metrics**: See metrics image above.
 
-## Final Considerations
+## Author
 
-This project demonstrates robust performance with a partial dataset, highlighting the model's efficiency and adaptability. It serves as a reliable tool for entity extraction in Brazilian Portuguese food-related texts.
+**Thiago Cunha**
+GitHub: [thiagocborghi](https://github.com/thiagocborghi)
 
-For inquiries or contributions, please open an issue or submit a pull request.
+If you have any questions or suggestions, feel free to **open an issue** or contribute to the project!
+
+---
 
 ## License
 
 This project is released under the MIT License - refer to the [LICENSE](LICENSE) file for details.
-```
