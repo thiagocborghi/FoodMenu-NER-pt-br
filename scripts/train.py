@@ -64,8 +64,8 @@ def train_model(training_data, output_dir, n_iter=60):
     return nlp
 
 if __name__ == "__main__":
-    DATA_PATH = "../data/dataset.json"
-    OUTPUT_DIR = "../model/food_item_ner_pt"
+    DATA_PATH = "data/dataset.json"
+    OUTPUT_DIR = "model/food_item_ner_pt"
     
     print("Carregando dados de treinamento...")
     training_data = load_data(DATA_PATH)

@@ -123,8 +123,8 @@ def evaluate_model(nlp, test_data):
     console.print("\n\n")
 
 if __name__ == "__main__":
-    MODEL_PATH = "../model/food_item_ner"
-    DATA_PATH = "../data/dataset.json"
+    MODEL_PATH = "model/food_item_ner"
+    DATA_PATH = "data/dataset.json"
     
     console.print("\n[bold cyan]Carregando modelo treinado...[/bold cyan]")
     nlp = spacy.load(MODEL_PATH)
