@@ -98,13 +98,45 @@ for ent in doc.ents:
     print(f"{ent.label_}: {ent.text}")
 ```
 
+### Command Line Usage
+
 You can also run predictions using the command line:
 
 ```bash
 python src/inference.py --text "250g de filé de frango grelhado, temperado com limão, azeite e ervas finas. Servido com arroz basmati e legumes assados como abóbora e cenoura"
 ```
 
-**Inference Example:**
+**Available Arguments:**
+
+| Argument | Type | Required | Default | Description |
+|----------|------|----------|---------|-------------|
+| `--text` | string | Yes | - | Input text for entity recognition |
+| `--model` | string | No | `model/food_item_ner_pt` | Path to the trained model directory |
+| `--display` | string | No | `cli` | Output format: `cli` for terminal or `html` for browser |
+
+**Examples:**
+
+Basic usage with CLI output:
+```bash
+python src/inference.py --text "500g de açúcar e 2 ovos"
+```
+
+Using a custom model path:
+```bash
+python src/inference.py --text "300ml de leite" --model "path/to/custom/model"
+```
+
+HTML visualization in browser:
+```bash
+python src/inference.py --text "1kg de farinha de trigo" --display html
+```
+
+Complex recipe analysis:
+```bash
+python src/inference.py --text "Para o bolo: 3 ovos, 200g de açúcar, 250ml de leite e 300g de farinha. Para a cobertura: 100g de chocolate e 50ml de creme de leite."
+```
+
+**Inference Output:**
 
 ![inference.png](https://i.postimg.cc/RFHx0ZVw/inference.png)
 
