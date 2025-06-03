@@ -23,14 +23,14 @@
 ```plaintext
 FoodMenu-NER-pt-br/
 ├── data/
-│   └── dataset.json         # Annotated dataset
+│   └── dataset.json         
 ├── model/
-│   └── food_item_ner_pt/    # Trained model directory
+│   └── food_item_ner_pt/   
 ├── scripts/
-│   ├── utils.py             # Helper functions
-│   ├── evaluate_model.py    # Evaluation script
-│   ├── inference.py         # Inference script
-│   └── train.py             # Training script
+│   ├── utils.py             
+│   ├── evaluate_model.py    
+│   ├── inference.py         
+│   └── train.py             
 ├── .gitignore
 ├── requirements.txt
 └── README.md
