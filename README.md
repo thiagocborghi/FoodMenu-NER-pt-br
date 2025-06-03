@@ -80,8 +80,6 @@ python src/evaluate_model.py
 
 ### Evaluation Metrics
 
-**Performance Metrics:**
-
 ![metrics.png](https://i.postimg.cc/BZTCGfcy/metrics.png)
 
 ## Inference
