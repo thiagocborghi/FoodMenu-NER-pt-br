@@ -66,13 +66,15 @@ FoodMenu-NER-pt-br/
 }
 ```
 
-## Training
+## Training and Evaluation
 
+To train the model, run:
 ```bash
-# Train model
 python src/train.py
+```
 
-# Evaluate model
+To evaluate the trained model:
+```bash
 python src/evaluate_model.py
 ```
 
@@ -87,14 +89,11 @@ python src/evaluate_model.py
 ```python
 import spacy
 
-# Load model
 nlp = spacy.load("model/food_item_ner_pt")
 
-# Make prediction
 text = "250g de filé de frango grelhado, temperado com limão, azeite e ervas finas. Servido com arroz basmati e legumes assados como abóbora e cenoura"
 doc = nlp(text)
 
-# Extract entities
 for ent in doc.ents:
     print(f"{ent.label_}: {ent.text}")
 ```
@@ -113,26 +112,6 @@ python src/inference.py --text "250g de filé de frango grelhado, temperado com 
 - Model optimized only for culinary texts
 - May struggle with regional culinary slang
 - Performance not tested on very long texts
-
-## Author
-
-**Thiago Cunha**
-GitHub: [thiagocborghi](https://github.com/thiagocborghi)
-
-If you have any questions or suggestions, feel free to **open an issue** or contribute to the project!
-
-## Citation
-
-If you use this model in your research, please cite:
-
-```bibtex
-@software{FoodMenu-NER-pt-br,
-  author = {Cunha, Thiago},
-  title = {FoodMenu-NER-pt-br: Named Entity Recognition for Brazilian Portuguese Food Menus},
-  year = {2024},
-  url = {https://github.com/thiagocborghi/FoodMenu-NER-pt-br}
-}
-```
 
 ## License
 
