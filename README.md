@@ -26,7 +26,7 @@ FoodMenu-NER-pt-br/
 │   └── dataset.json         
 ├── model/
 │   └── food_item_ner_pt/   
-├── scripts/
+├── src/
 │   ├── utils.py             
 │   ├── evaluate_model.py    
 │   ├── inference.py         
@@ -70,10 +70,10 @@ FoodMenu-NER-pt-br/
 
 ```bash
 # Train model
-python scripts/train.py
+python src/train.py
 
 # Evaluate model
-python scripts/evaluate_model.py
+python src/evaluate_model.py
 ```
 
 ### Evaluation Metrics
@@ -102,7 +102,7 @@ for ent in doc.ents:
 You can also run predictions using the command line:
 
 ```bash
-python scripts/inference.py --text "250g de filé de frango grelhado, temperado com limão, azeite e ervas finas. Servido com arroz basmati e legumes assados como abóbora e cenoura"
+python src/inference.py --text "250g de filé de frango grelhado, temperado com limão, azeite e ervas finas. Servido com arroz basmati e legumes assados como abóbora e cenoura"
 ```
 
 **Inference Example:**
