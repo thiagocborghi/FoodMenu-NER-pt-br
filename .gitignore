@@ -1,3 +1,4 @@
 model/*
 src/__pycache__
 temp_prediction.html
+.DS_Store
